@@ -58,6 +58,7 @@
             this.setIPToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.localhostToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.createSlaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.imageLocationToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,7 +67,6 @@
             this.setIPToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.localhostToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.createSlaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -313,6 +313,13 @@
             this.toolStripMenuItem5.Text = "192.168.1.4";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
+            // createSlaveToolStripMenuItem
+            // 
+            this.createSlaveToolStripMenuItem.Name = "createSlaveToolStripMenuItem";
+            this.createSlaveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.createSlaveToolStripMenuItem.Text = "Create Slave";
+            this.createSlaveToolStripMenuItem.Click += new System.EventHandler(this.createSlaveToolStripMenuItem_Click);
+            // 
             // aboutToolStripMenuItem2
             // 
             this.aboutToolStripMenuItem2.Name = "aboutToolStripMenuItem2";
@@ -360,12 +367,6 @@
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
             this.toolStripMenuItem4.Text = "192.168.1.4";
-            // 
-            // createSlaveToolStripMenuItem
-            // 
-            this.createSlaveToolStripMenuItem.Name = "createSlaveToolStripMenuItem";
-            this.createSlaveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.createSlaveToolStripMenuItem.Text = "Create Slave";
             // 
             // MainMenu
             // 

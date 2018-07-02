@@ -27,13 +27,13 @@ namespace System
         {
             InitializeComponent();
         }
-        
+
         public static void Initialize(string connstr)
         {
-            myConnectionString =connstr;
+            myConnectionString = connstr;
             conn = new MySqlConnection(myConnectionString);
         }
-
+        int user_accounts;
         bool jpiadb;
         bool jpia_eventsdb;
         string jpia = "jpia";
@@ -74,6 +74,31 @@ namespace System
                 }
             }
         }
+        public void checkuser()
+        {
+            string query = "select count(user) from mysql.user where user = 'jpia'";
+            if (MainMenu.OpenConnection())
+            {
+                try
+                {
+                    MySqlCommand command = new MySqlCommand(query, MainMenu.conn);
+                    MySqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        user_accounts = Convert.ToInt32(reader[0].ToString());
+                    }
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    MainMenu.CloseConnection();
+                }
+            }
+        }
+
 
         //create database
         public static void createdb(string q)
@@ -204,7 +229,7 @@ namespace System
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void MainMenu_Load(object sender, EventArgs e)
@@ -223,19 +248,19 @@ namespace System
 
         private void printToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-           
+
 
         }
 
         private void localhostToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            
+
 
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void aboutToolStripMenuItem3_Click(object sender, EventArgs e)
@@ -294,6 +319,29 @@ namespace System
         private void toolStripMenuItem5_Click(object sender, EventArgs e)
         {
             isMaster = false;
+        }
+
+        private void createSlaveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MainMenu.Initialize("server=localhost;user=root;sslmode=none;");
+            checkuser();
+            if (user_accounts != 2)
+            {
+                Insert("create user 'jpia'@'192.168.1.2';");
+                Insert("GRANT USAGE ON *.* TO 'jpia'@'192.168.1.2';");
+                Insert("GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER ON `jpia\\_events`.*TO 'jpia'@'192.168.1.2';");
+                Insert("GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER ON `jpia`.*TO 'jpia'@'192.168.1.2';");
+                Insert("GRANT ALL PRIVILEGES ON `jpia\\_ %`.*TO 'jpia'@'192.168.1.2';");
+
+                Insert("create user 'jpia'@'192.168.1.3';");
+                Insert("GRANT USAGE ON *.* TO 'jpia'@'192.168.1.3';");
+                Insert("GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER ON `jpia\\_events`.*TO 'jpia'@'192.168.1.3';");
+                Insert("GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER ON `jpia`.*TO 'jpia'@'192.168.1.3';");
+                Insert("GRANT ALL PRIVILEGES ON `jpia\\_ %`.*TO 'jpia'@'192.168.1.3';");
+
+                MessageBox.Show("User Accounts Created!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
         }
     }
 }
