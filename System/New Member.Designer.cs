@@ -48,21 +48,19 @@
             this.label10 = new System.Windows.Forms.Label();
             this.Year = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.Comm = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.GuardName = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.Contact = new System.Windows.Forms.MaskedTextBox();
-            this.GuardContact = new System.Windows.Forms.MaskedTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Age = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -134,7 +132,7 @@
             this.label4.BackColor = System.Drawing.Color.LightGreen;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(12, 216);
+            this.label4.Location = new System.Drawing.Point(12, 228);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(184, 30);
             this.label4.TabIndex = 8;
@@ -144,7 +142,7 @@
             // 
             this.SN.BeepOnError = true;
             this.SN.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SN.Location = new System.Drawing.Point(202, 219);
+            this.SN.Location = new System.Drawing.Point(202, 231);
             this.SN.Mask = "00000000000";
             this.SN.Name = "SN";
             this.SN.Size = new System.Drawing.Size(152, 25);
@@ -156,7 +154,7 @@
             this.label5.BackColor = System.Drawing.Color.LightGreen;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(360, 216);
+            this.label5.Location = new System.Drawing.Point(360, 228);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(156, 30);
             this.label5.TabIndex = 10;
@@ -165,7 +163,7 @@
             // EMail
             // 
             this.EMail.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EMail.Location = new System.Drawing.Point(522, 218);
+            this.EMail.Location = new System.Drawing.Point(522, 230);
             this.EMail.Name = "EMail";
             this.EMail.Size = new System.Drawing.Size(266, 25);
             this.EMail.TabIndex = 5;
@@ -176,7 +174,7 @@
             this.label6.BackColor = System.Drawing.Color.LightGreen;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(12, 259);
+            this.label6.Location = new System.Drawing.Point(12, 282);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(162, 30);
             this.label6.TabIndex = 12;
@@ -185,7 +183,7 @@
             // Address
             // 
             this.Address.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Address.Location = new System.Drawing.Point(180, 261);
+            this.Address.Location = new System.Drawing.Point(180, 284);
             this.Address.Multiline = true;
             this.Address.Name = "Address";
             this.Address.Size = new System.Drawing.Size(608, 26);
@@ -197,7 +195,7 @@
             this.label7.BackColor = System.Drawing.Color.LightGreen;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(12, 313);
+            this.label7.Location = new System.Drawing.Point(12, 333);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(183, 30);
             this.label7.TabIndex = 14;
@@ -209,7 +207,7 @@
             this.label8.BackColor = System.Drawing.Color.LightGreen;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(387, 313);
+            this.label8.Location = new System.Drawing.Point(387, 333);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(146, 30);
             this.label8.TabIndex = 16;
@@ -219,7 +217,7 @@
             // 
             this.Bday.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Bday.Location = new System.Drawing.Point(539, 316);
+            this.Bday.Location = new System.Drawing.Point(539, 336);
             this.Bday.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.Bday.Name = "Bday";
             this.Bday.Size = new System.Drawing.Size(244, 25);
@@ -233,7 +231,7 @@
             this.label9.BackColor = System.Drawing.Color.LightGreen;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(12, 367);
+            this.label9.Location = new System.Drawing.Point(12, 382);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 30);
             this.label9.TabIndex = 19;
@@ -245,7 +243,7 @@
             this.label10.BackColor = System.Drawing.Color.LightGreen;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(169, 367);
+            this.label10.Location = new System.Drawing.Point(169, 382);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(122, 30);
             this.label10.TabIndex = 21;
@@ -262,9 +260,9 @@
             "3rd",
             "4th",
             "5th"});
-            this.Year.Location = new System.Drawing.Point(302, 372);
+            this.Year.Location = new System.Drawing.Point(302, 387);
             this.Year.Name = "Year";
-            this.Year.Size = new System.Drawing.Size(203, 25);
+            this.Year.Size = new System.Drawing.Size(231, 25);
             this.Year.TabIndex = 9;
             // 
             // label11
@@ -273,75 +271,22 @@
             this.label11.BackColor = System.Drawing.Color.LightGreen;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(12, 421);
+            this.label11.Location = new System.Drawing.Point(12, 432);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(233, 30);
+            this.label11.Size = new System.Drawing.Size(97, 30);
             this.label11.TabIndex = 23;
-            this.label11.Text = "Committee Affiliation:";
-            // 
-            // Comm
-            // 
-            this.Comm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Comm.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Comm.FormattingEnabled = true;
-            this.Comm.Items.AddRange(new object[] {
-            "Academics",
-            "Non - Academics",
-            "Membership",
-            "Finance",
-            "Internal Affairs",
-            "External Affairs",
-            "Information and Publicity",
-            "Sponsorship",
-            "Audit",
-            "None"});
-            this.Comm.Location = new System.Drawing.Point(251, 424);
-            this.Comm.Name = "Comm";
-            this.Comm.Size = new System.Drawing.Size(254, 25);
-            this.Comm.TabIndex = 10;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.LightGreen;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(12, 475);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(173, 30);
-            this.label12.TabIndex = 25;
-            this.label12.Text = "Guardian Name:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.LightGreen;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(12, 529);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(279, 30);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "Guardian Contact Number:";
+            this.label11.Text = "Gender: ";
             // 
             // button1
             // 
             this.button1.BackgroundImage = global::System.Properties.Resources.register_button_new;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(563, 367);
+            this.button1.Location = new System.Drawing.Point(567, 384);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(204, 187);
             this.button1.TabIndex = 14;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // GuardName
-            // 
-            this.GuardName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GuardName.Location = new System.Drawing.Point(191, 477);
-            this.GuardName.Name = "GuardName";
-            this.GuardName.Size = new System.Drawing.Size(314, 25);
-            this.GuardName.TabIndex = 11;
             // 
             // button2
             // 
@@ -359,7 +304,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.LightGreen;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(17, 567);
+            this.checkBox1.Location = new System.Drawing.Point(17, 539);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(293, 21);
             this.checkBox1.TabIndex = 13;
@@ -371,7 +316,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.LightGreen;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(157, 568);
+            this.linkLabel1.Location = new System.Drawing.Point(157, 540);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(152, 17);
             this.linkLabel1.TabIndex = 32;
@@ -383,21 +328,11 @@
             // 
             this.Contact.BeepOnError = true;
             this.Contact.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contact.Location = new System.Drawing.Point(196, 316);
+            this.Contact.Location = new System.Drawing.Point(196, 336);
             this.Contact.Mask = "00000000000";
             this.Contact.Name = "Contact";
             this.Contact.Size = new System.Drawing.Size(185, 25);
             this.Contact.TabIndex = 7;
-            // 
-            // GuardContact
-            // 
-            this.GuardContact.BeepOnError = true;
-            this.GuardContact.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GuardContact.Location = new System.Drawing.Point(297, 534);
-            this.GuardContact.Mask = "00000000000";
-            this.GuardContact.Name = "GuardContact";
-            this.GuardContact.Size = new System.Drawing.Size(208, 25);
-            this.GuardContact.TabIndex = 12;
             // 
             // pictureBox1
             // 
@@ -411,7 +346,7 @@
             // Age
             // 
             this.Age.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Age.Location = new System.Drawing.Point(73, 372);
+            this.Age.Location = new System.Drawing.Point(73, 387);
             this.Age.Name = "Age";
             this.Age.ReadOnly = true;
             this.Age.Size = new System.Drawing.Size(64, 25);
@@ -422,7 +357,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.Color.LightGreen;
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(549, 109);
+            this.radioButton1.Location = new System.Drawing.Point(212, 485);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(147, 29);
             this.radioButton1.TabIndex = 37;
@@ -435,7 +370,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.BackColor = System.Drawing.Color.LightGreen;
             this.radioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(702, 109);
+            this.radioButton2.Location = new System.Drawing.Point(365, 485);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(86, 29);
             this.radioButton2.TabIndex = 38;
@@ -443,25 +378,61 @@
             this.radioButton2.UseVisualStyleBackColor = false;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.BackColor = System.Drawing.Color.LightGreen;
+            this.radioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(115, 434);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(73, 29);
+            this.radioButton3.TabIndex = 39;
+            this.radioButton3.Text = "Male";
+            this.radioButton3.UseVisualStyleBackColor = false;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.BackColor = System.Drawing.Color.LightGreen;
+            this.radioButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(194, 434);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(92, 29);
+            this.radioButton4.TabIndex = 40;
+            this.radioButton4.Text = "Female";
+            this.radioButton4.UseVisualStyleBackColor = false;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.LightGreen;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(12, 483);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(194, 30);
+            this.label12.TabIndex = 41;
+            this.label12.Text = "Membership Type:";
+            // 
             // New_Member
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::System.Properties.Resources.JPIA_MEMBERS;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.Age);
-            this.Controls.Add(this.GuardContact);
             this.Controls.Add(this.Contact);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.GuardName);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.Comm);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.Year);
             this.Controls.Add(this.label10);
@@ -515,20 +486,18 @@
         private Windows.Forms.Label label10;
         private Windows.Forms.ComboBox Year;
         private Windows.Forms.Label label11;
-        private Windows.Forms.ComboBox Comm;
-        private Windows.Forms.Label label12;
-        private Windows.Forms.Label label13;
         private Windows.Forms.Button button1;
-        private Windows.Forms.TextBox GuardName;
         private Windows.Forms.Button button2;
         private DirectoryServices.DirectoryEntry directoryEntry1;
         private Windows.Forms.CheckBox checkBox1;
         private Windows.Forms.LinkLabel linkLabel1;
         private Windows.Forms.MaskedTextBox Contact;
-        private Windows.Forms.MaskedTextBox GuardContact;
         private Windows.Forms.PictureBox pictureBox1;
         private Windows.Forms.TextBox Age;
         private Windows.Forms.RadioButton radioButton1;
         private Windows.Forms.RadioButton radioButton2;
+        private Windows.Forms.RadioButton radioButton3;
+        private Windows.Forms.RadioButton radioButton4;
+        private Windows.Forms.Label label12;
     }
 }

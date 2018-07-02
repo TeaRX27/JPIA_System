@@ -171,20 +171,20 @@
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(227, 368);
+            this.textBox6.Location = new System.Drawing.Point(56, 370);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(142, 25);
+            this.textBox6.Size = new System.Drawing.Size(313, 25);
             this.textBox6.TabIndex = 24;
             this.textBox6.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.textBox6_MouseDoubleClick);
             // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(146, 337);
+            this.textBox5.Location = new System.Drawing.Point(82, 337);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(223, 25);
+            this.textBox5.Size = new System.Drawing.Size(287, 25);
             this.textBox5.TabIndex = 23;
             this.textBox5.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.textBox5_MouseDoubleClick);
             // 
@@ -236,9 +236,9 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(6, 370);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(215, 21);
+            this.label7.Size = new System.Drawing.Size(44, 21);
             this.label7.TabIndex = 18;
-            this.label7.Text = "Guardian Contact Number:";
+            this.label7.Text = "Age:";
             // 
             // label6
             // 
@@ -248,9 +248,9 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(6, 337);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(134, 21);
+            this.label6.Size = new System.Drawing.Size(70, 21);
             this.label6.TabIndex = 17;
-            this.label6.Text = "Guardian Name:";
+            this.label6.Text = "Gender:";
             // 
             // label5
             // 

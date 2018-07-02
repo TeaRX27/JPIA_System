@@ -114,8 +114,8 @@ namespace System
                         textBox2.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Address"),true);
                         textBox3.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Contact_No"),true);
                         textBox4.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Year_Level"),true);
-                        textBox5.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Guard_Name"),true);
-                        textBox6.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Guard_Contact"),true);
+                        textBox5.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Gender"),true);
+                        textBox6.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Age"),true);
                         Image dump = pictureBox1.BackgroundImage;
                         if (dump != null)
                             dump.Dispose();
@@ -177,7 +177,7 @@ namespace System
         private void textBox5_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             GeneralEdit.data = textBox5.Text;
-            GeneralEdit.col = "Guard_Name";
+            GeneralEdit.col = "Gender";
             Form form1 = new GeneralEdit();
             form1.ShowDialog();
             textBox5.Text = GeneralEdit.data;
@@ -227,7 +227,7 @@ namespace System
         private void textBox6_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             GeneralEdit.data = textBox6.Text;
-            GeneralEdit.col = "Guard_Contact";
+            GeneralEdit.col = "Age";
             Form form1 = new GeneralEdit();
             form1.ShowDialog();
             textBox6.Text = GeneralEdit.data;
