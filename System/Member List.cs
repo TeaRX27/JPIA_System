@@ -135,6 +135,57 @@ namespace System
             }
         }
 
+        public void countnew() //count new member
+        {
+            string query = "Select count(membership) from member_list where Membership = '4tiIy8LrFw/HLmgSreMHiw=='";
+            if (MainMenu.OpenConnection())
+            {
+                try
+                {
+                    MySqlCommand command = new MySqlCommand(query, MainMenu.conn);
+                    MySqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        MessageBox.Show(reader[0].ToString() + " new members.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    MainMenu.CloseConnection();
+                }
+            }
+        }
+        public void countold() //count old member
+        {
+
+            string query = "Select count(membership) from member_list where Membership = '0oJH9mE2Sm4='";
+            if (MainMenu.OpenConnection())
+            {
+                try
+                {
+                    MySqlCommand command = new MySqlCommand(query, MainMenu.conn);
+                    MySqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        string value = EnCryptDecrypt.CryptorEngine.Decrypt(reader[0].ToString(), true);
+                    }
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    MainMenu.CloseConnection();
+
+                }
+            }
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
                 Form members = new Members();
@@ -222,6 +273,16 @@ namespace System
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void countNewMemberToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            countnew();
+        }
+
+        private void countOldMembersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            countold();
         }
 
         private void textBox6_MouseDoubleClick(object sender, MouseEventArgs e)

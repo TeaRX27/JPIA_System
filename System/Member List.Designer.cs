@@ -59,6 +59,8 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearMemberInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.countNewMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.countOldMembersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -332,7 +334,9 @@
             // 
             this.fileToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.refreshListToolStripMenuItem1,
-            this.clearMemberInfoToolStripMenuItem1});
+            this.clearMemberInfoToolStripMenuItem1,
+            this.countNewMemberToolStripMenuItem,
+            this.countOldMembersToolStripMenuItem});
             this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
             this.fileToolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem1.Text = "File";
@@ -340,14 +344,14 @@
             // refreshListToolStripMenuItem1
             // 
             this.refreshListToolStripMenuItem1.Name = "refreshListToolStripMenuItem1";
-            this.refreshListToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
+            this.refreshListToolStripMenuItem1.Size = new System.Drawing.Size(187, 22);
             this.refreshListToolStripMenuItem1.Text = "Refresh List";
             this.refreshListToolStripMenuItem1.Click += new System.EventHandler(this.refreshListToolStripMenuItem1_Click_1);
             // 
             // clearMemberInfoToolStripMenuItem1
             // 
             this.clearMemberInfoToolStripMenuItem1.Name = "clearMemberInfoToolStripMenuItem1";
-            this.clearMemberInfoToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
+            this.clearMemberInfoToolStripMenuItem1.Size = new System.Drawing.Size(187, 22);
             this.clearMemberInfoToolStripMenuItem1.Text = "Clear Member Info";
             this.clearMemberInfoToolStripMenuItem1.Click += new System.EventHandler(this.clearMemberInfoToolStripMenuItem1_Click);
             // 
@@ -370,6 +374,20 @@
             this.clearMemberInfoToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.clearMemberInfoToolStripMenuItem.Text = "Clear Member Info";
             this.clearMemberInfoToolStripMenuItem.Click += new System.EventHandler(this.clearMemberInfoToolStripMenuItem_Click);
+            // 
+            // countNewMemberToolStripMenuItem
+            // 
+            this.countNewMemberToolStripMenuItem.Name = "countNewMemberToolStripMenuItem";
+            this.countNewMemberToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.countNewMemberToolStripMenuItem.Text = "Count New Members";
+            this.countNewMemberToolStripMenuItem.Click += new System.EventHandler(this.countNewMemberToolStripMenuItem_Click);
+            // 
+            // countOldMembersToolStripMenuItem
+            // 
+            this.countOldMembersToolStripMenuItem.Name = "countOldMembersToolStripMenuItem";
+            this.countOldMembersToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.countOldMembersToolStripMenuItem.Text = "Count Old Members";
+            this.countOldMembersToolStripMenuItem.Click += new System.EventHandler(this.countOldMembersToolStripMenuItem_Click);
             // 
             // Member_List
             // 
@@ -433,5 +451,7 @@
         private Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
         private Windows.Forms.ToolStripMenuItem refreshListToolStripMenuItem1;
         private Windows.Forms.ToolStripMenuItem clearMemberInfoToolStripMenuItem1;
+        private Windows.Forms.ToolStripMenuItem countNewMemberToolStripMenuItem;
+        private Windows.Forms.ToolStripMenuItem countOldMembersToolStripMenuItem;
     }
 }
