@@ -177,7 +177,7 @@ namespace System
         private void Bday_ValueChanged(object sender, EventArgs e)
         {
             int age;
-            if((DateTime.Now.Month - Bday.Value.Month >= 0)&& (DateTime.Now.Day - Bday.Value.Day >= 0))
+            if((DateTime.Now.Month - Bday.Value.Month >= 0)&& (DateTime.Now.DayOfYear - Bday.Value.DayOfYear >= 0))
             {
                 age = DateTime.Now.Year - Bday.Value.Year;
             }
