@@ -59,6 +59,7 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearMemberInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -146,6 +147,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.textBox4);
@@ -371,6 +373,14 @@
             this.clearMemberInfoToolStripMenuItem.Text = "Clear Member Info";
             this.clearMemberInfoToolStripMenuItem.Click += new System.EventHandler(this.clearMemberInfoToolStripMenuItem_Click);
             // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(82, 174);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(210, 25);
+            this.textBox7.TabIndex = 25;
+            // 
             // Member_List
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -433,5 +443,6 @@
         private Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
         private Windows.Forms.ToolStripMenuItem refreshListToolStripMenuItem1;
         private Windows.Forms.ToolStripMenuItem clearMemberInfoToolStripMenuItem1;
+        private Windows.Forms.TextBox textBox7;
     }
 }

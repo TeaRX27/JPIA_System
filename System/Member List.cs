@@ -116,11 +116,8 @@ namespace System
                         textBox4.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Year_Level"),true);
                         textBox5.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Gender"),true);
                         textBox6.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Age"),true);
-                        Image dump = pictureBox1.BackgroundImage;
-                        if (dump != null)
-                            dump.Dispose();
-                        pictureBox1.BackgroundImage =Image.FromFile(EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("ID_Address"),true));
-                        pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+                        textBox7.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("BDay"), true);
+                       
                         
                     }
                 }
