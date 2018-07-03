@@ -56,11 +56,11 @@
             this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshListToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.clearMemberInfoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.countNewMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.countOldMembersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearMemberInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.countNewMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.countOldMembersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -355,6 +355,20 @@
             this.clearMemberInfoToolStripMenuItem1.Text = "Clear Member Info";
             this.clearMemberInfoToolStripMenuItem1.Click += new System.EventHandler(this.clearMemberInfoToolStripMenuItem1_Click);
             // 
+            // countNewMemberToolStripMenuItem
+            // 
+            this.countNewMemberToolStripMenuItem.Name = "countNewMemberToolStripMenuItem";
+            this.countNewMemberToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.countNewMemberToolStripMenuItem.Text = "Count New Members";
+            this.countNewMemberToolStripMenuItem.Click += new System.EventHandler(this.countNewMemberToolStripMenuItem_Click);
+            // 
+            // countOldMembersToolStripMenuItem
+            // 
+            this.countOldMembersToolStripMenuItem.Name = "countOldMembersToolStripMenuItem";
+            this.countOldMembersToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.countOldMembersToolStripMenuItem.Text = "Count Old Members";
+            this.countOldMembersToolStripMenuItem.Click += new System.EventHandler(this.countOldMembersToolStripMenuItem_Click);
+            // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -374,20 +388,6 @@
             this.clearMemberInfoToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.clearMemberInfoToolStripMenuItem.Text = "Clear Member Info";
             this.clearMemberInfoToolStripMenuItem.Click += new System.EventHandler(this.clearMemberInfoToolStripMenuItem_Click);
-            // 
-            // countNewMemberToolStripMenuItem
-            // 
-            this.countNewMemberToolStripMenuItem.Name = "countNewMemberToolStripMenuItem";
-            this.countNewMemberToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.countNewMemberToolStripMenuItem.Text = "Count New Members";
-            this.countNewMemberToolStripMenuItem.Click += new System.EventHandler(this.countNewMemberToolStripMenuItem_Click);
-            // 
-            // countOldMembersToolStripMenuItem
-            // 
-            this.countOldMembersToolStripMenuItem.Name = "countOldMembersToolStripMenuItem";
-            this.countOldMembersToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.countOldMembersToolStripMenuItem.Text = "Count Old Members";
-            this.countOldMembersToolStripMenuItem.Click += new System.EventHandler(this.countOldMembersToolStripMenuItem_Click);
             // 
             // Member_List
             // 

@@ -115,10 +115,7 @@ namespace System
                         textBox3.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Contact_No"),true);
                         textBox4.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Year_Level"),true);
                         textBox5.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Gender"),true);
-                        textBox6.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Age"),true);
-                        textBox7.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("BDay"), true);
-                       
-                        
+                        textBox6.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Age"),true);                       
                     }
                 }
                 catch (MySqlException ex)
