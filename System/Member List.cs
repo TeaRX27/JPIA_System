@@ -171,7 +171,7 @@ namespace System
                     MySqlDataReader reader = command.ExecuteReader();
                     while (reader.Read())
                     {
-                        string value = EnCryptDecrypt.CryptorEngine.Decrypt(reader[0].ToString(), true);
+                        MessageBox.Show(reader[0].ToString() + " new members.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 catch (MySqlException ex)
