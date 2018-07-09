@@ -103,7 +103,7 @@
             "4th",
             "5th",
             "All"});
-            this.comboBox3.Location = new System.Drawing.Point(3, 266);
+            this.comboBox3.Location = new System.Drawing.Point(3, 225);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(143, 25);
             this.comboBox3.TabIndex = 5;
@@ -114,7 +114,7 @@
             this.label3.BackColor = System.Drawing.Color.LightGreen;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(3, 242);
+            this.label3.Location = new System.Drawing.Point(3, 201);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 21);
             this.label3.TabIndex = 4;

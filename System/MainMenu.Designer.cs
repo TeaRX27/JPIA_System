@@ -59,6 +59,7 @@
             this.localhostToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.createSlaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportDatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.imageLocationToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,6 +68,15 @@
             this.setIPToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.localhostToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -278,7 +288,8 @@
             this.fileToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.printToolStripMenuItem3,
             this.setIPToolStripMenuItem3,
-            this.createSlaveToolStripMenuItem});
+            this.createSlaveToolStripMenuItem,
+            this.exportDatabaseToolStripMenuItem});
             this.fileToolStripMenuItem3.Name = "fileToolStripMenuItem3";
             this.fileToolStripMenuItem3.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem3.Text = "File";
@@ -286,7 +297,7 @@
             // printToolStripMenuItem3
             // 
             this.printToolStripMenuItem3.Name = "printToolStripMenuItem3";
-            this.printToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.printToolStripMenuItem3.Size = new System.Drawing.Size(158, 22);
             this.printToolStripMenuItem3.Text = "Print";
             this.printToolStripMenuItem3.Click += new System.EventHandler(this.printToolStripMenuItem3_Click);
             // 
@@ -296,7 +307,7 @@
             this.localhostToolStripMenuItem3,
             this.toolStripMenuItem5});
             this.setIPToolStripMenuItem3.Name = "setIPToolStripMenuItem3";
-            this.setIPToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.setIPToolStripMenuItem3.Size = new System.Drawing.Size(158, 22);
             this.setIPToolStripMenuItem3.Text = "Set IP";
             // 
             // localhostToolStripMenuItem3
@@ -316,9 +327,16 @@
             // createSlaveToolStripMenuItem
             // 
             this.createSlaveToolStripMenuItem.Name = "createSlaveToolStripMenuItem";
-            this.createSlaveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.createSlaveToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.createSlaveToolStripMenuItem.Text = "Create Slave";
             this.createSlaveToolStripMenuItem.Click += new System.EventHandler(this.createSlaveToolStripMenuItem_Click);
+            // 
+            // exportDatabaseToolStripMenuItem
+            // 
+            this.exportDatabaseToolStripMenuItem.Name = "exportDatabaseToolStripMenuItem";
+            this.exportDatabaseToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.exportDatabaseToolStripMenuItem.Text = "Export Database";
+            this.exportDatabaseToolStripMenuItem.Click += new System.EventHandler(this.exportDatabaseToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem2
             // 
@@ -368,12 +386,79 @@
             this.toolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
             this.toolStripMenuItem4.Text = "192.168.1.4";
             // 
+            // crystalReportViewer1
+            // 
+            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.DisplayStatusBar = false;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(721, 531);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.ShowCloseButton = false;
+            this.crystalReportViewer1.ShowGroupTreeButton = false;
+            this.crystalReportViewer1.ShowParameterPanelButton = false;
+            this.crystalReportViewer1.ShowTextSearchButton = false;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(67, 57);
+            this.crystalReportViewer1.TabIndex = 6;
+            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            this.crystalReportViewer1.Visible = false;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7});
+            this.listView1.Location = new System.Drawing.Point(594, 491);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(121, 97);
+            this.listView1.TabIndex = 7;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.Visible = false;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "fn";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "mi";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "ln";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "gen";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "year";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "con";
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "email";
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::System.Properties.Resources.JPIA_MEMBERS_DATABASE;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -432,5 +517,15 @@
         private Windows.Forms.ToolStripMenuItem localhostToolStripMenuItem3;
         private Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
         private Windows.Forms.ToolStripMenuItem createSlaveToolStripMenuItem;
+        private Windows.Forms.ToolStripMenuItem exportDatabaseToolStripMenuItem;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private Windows.Forms.ListView listView1;
+        private Windows.Forms.ColumnHeader columnHeader1;
+        private Windows.Forms.ColumnHeader columnHeader2;
+        private Windows.Forms.ColumnHeader columnHeader3;
+        private Windows.Forms.ColumnHeader columnHeader4;
+        private Windows.Forms.ColumnHeader columnHeader5;
+        private Windows.Forms.ColumnHeader columnHeader6;
+        private Windows.Forms.ColumnHeader columnHeader7;
     }
 }

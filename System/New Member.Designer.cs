@@ -61,7 +61,11 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -357,7 +361,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.Color.LightGreen;
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(212, 485);
+            this.radioButton1.Location = new System.Drawing.Point(6, 15);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(147, 29);
             this.radioButton1.TabIndex = 37;
@@ -370,7 +374,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.BackColor = System.Drawing.Color.LightGreen;
             this.radioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(365, 485);
+            this.radioButton2.Location = new System.Drawing.Point(159, 15);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(86, 29);
             this.radioButton2.TabIndex = 38;
@@ -383,7 +387,7 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.BackColor = System.Drawing.Color.LightGreen;
             this.radioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(115, 434);
+            this.radioButton3.Location = new System.Drawing.Point(10, 12);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(73, 29);
             this.radioButton3.TabIndex = 39;
@@ -396,7 +400,7 @@
             this.radioButton4.AutoSize = true;
             this.radioButton4.BackColor = System.Drawing.Color.LightGreen;
             this.radioButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(194, 434);
+            this.radioButton4.Location = new System.Drawing.Point(89, 12);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(92, 29);
             this.radioButton4.TabIndex = 40;
@@ -416,17 +420,37 @@
             this.label12.TabIndex = 41;
             this.label12.Text = "Membership Type:";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.LightGreen;
+            this.groupBox1.Controls.Add(this.radioButton3);
+            this.groupBox1.Controls.Add(this.radioButton4);
+            this.groupBox1.Location = new System.Drawing.Point(100, 423);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 47);
+            this.groupBox1.TabIndex = 42;
+            this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.LightGreen;
+            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Controls.Add(this.radioButton2);
+            this.groupBox2.Location = new System.Drawing.Point(207, 472);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(253, 56);
+            this.groupBox2.TabIndex = 43;
+            this.groupBox2.TabStop = false;
+            // 
             // New_Member
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::System.Properties.Resources.JPIA_MEMBERS;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.Age);
             this.Controls.Add(this.Contact);
             this.Controls.Add(this.linkLabel1);
@@ -460,6 +484,10 @@
             this.Text = "New_Member";
             this.Load += new System.EventHandler(this.New_Member_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -499,5 +527,7 @@
         private Windows.Forms.RadioButton radioButton3;
         private Windows.Forms.RadioButton radioButton4;
         private Windows.Forms.Label label12;
+        private Windows.Forms.GroupBox groupBox1;
+        private Windows.Forms.GroupBox groupBox2;
     }
 }

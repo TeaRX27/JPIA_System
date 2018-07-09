@@ -78,6 +78,7 @@ namespace System
         }
         public void Populate_Combobox(string myquery)
         {
+
             comboBox2.Items.Clear();
             comboBox2.Text = "";
             string query = myquery;
@@ -114,10 +115,7 @@ namespace System
             {
                 MainMenu.Initialize("server=192.168.1.4;uid=access;pwd=;database=jpia;sslmode=none;");
             }
-
-
             Insert("Delete from report_table;");
-
             if (MainMenu.isMaster == true)
             {
                 MainMenu.Initialize("server=localhost;uid=root;pwd=;database=" + comboBox1.Text + ";sslmode=none;");
@@ -128,7 +126,7 @@ namespace System
             }
 
 
-            if (comboBox1.Text=="CoESS")
+            if (comboBox1.Text=="JPIA")
             {
                 if (MainMenu.isMaster == true)
                 {
@@ -167,7 +165,7 @@ namespace System
                     }
                 }
             }
-            else if(comboBox1.Text=="CoESS_Events")
+            else if(comboBox1.Text=="JPIA_Events")
             {
                 if (comboBox3.Text != "All")
                 {
@@ -238,6 +236,7 @@ namespace System
             }
 
             crystalReportViewer1.RefreshReport();
+            crystalReportViewer1.ExportReport();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

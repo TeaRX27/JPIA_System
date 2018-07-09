@@ -115,7 +115,8 @@ namespace System
                         textBox3.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Contact_No"),true);
                         textBox4.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Year_Level"),true);
                         textBox5.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Gender"),true);
-                        textBox6.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Age"),true);                       
+                        textBox6.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Age"),true);
+                        textBox7.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Email"), true);
                     }
                 }
                 catch (MySqlException ex)
@@ -279,6 +280,15 @@ namespace System
             countold();
         }
 
+        private void textBox7_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            GeneralEdit.data = textBox7.Text;
+            GeneralEdit.col = "Email";
+            Form form1 = new GeneralEdit();
+            form1.ShowDialog();
+            textBox7.Text = GeneralEdit.data;
+        }
+
         private void textBox6_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             GeneralEdit.data = textBox6.Text;
@@ -326,14 +336,14 @@ namespace System
                 string oldimage = pictureBox1.ImageLocation;
                 filename = openFileDialog1.SafeFileName;
                 pickedImage = openFileDialog1.FileName;
-                pictureBox1.ImageLocation = pickedImage;
+                pictureBox1.BackgroundImage = Image.FromFile(location + filename);
                 if (DialogResult.Yes == MessageBox.Show("Would you like to save changes?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
                     Updated("ID_Address", location + filename, idnumber);
                 }
                 else
                 {
-                    pictureBox1.ImageLocation = oldimage;
+                    pictureBox1.BackgroundImage = Image.FromFile(oldimage);
                 }
             }
         }
