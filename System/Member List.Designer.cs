@@ -38,6 +38,8 @@
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -61,8 +63,8 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearMemberInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -150,6 +152,8 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.textBox6);
@@ -174,10 +178,32 @@
             this.groupBox2.Text = "Member Info";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.LightGreen;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(6, 253);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 21);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Email:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(69, 249);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(300, 25);
+            this.textBox7.TabIndex = 25;
+            this.textBox7.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.textBox7_MouseDoubleClick);
+            // 
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(56, 402);
+            this.textBox6.Location = new System.Drawing.Point(56, 382);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(313, 25);
@@ -187,7 +213,7 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(82, 369);
+            this.textBox5.Location = new System.Drawing.Point(82, 349);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(287, 25);
@@ -197,7 +223,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(103, 336);
+            this.textBox4.Location = new System.Drawing.Point(103, 316);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(266, 25);
@@ -207,7 +233,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(153, 301);
+            this.textBox3.Location = new System.Drawing.Point(153, 281);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(216, 25);
@@ -217,7 +243,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(86, 238);
+            this.textBox2.Location = new System.Drawing.Point(86, 218);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(283, 25);
@@ -227,7 +253,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(72, 205);
+            this.textBox1.Location = new System.Drawing.Point(72, 185);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(297, 25);
@@ -240,7 +266,7 @@
             this.label7.BackColor = System.Drawing.Color.LightGreen;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(6, 402);
+            this.label7.Location = new System.Drawing.Point(6, 382);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 21);
             this.label7.TabIndex = 18;
@@ -252,7 +278,7 @@
             this.label6.BackColor = System.Drawing.Color.LightGreen;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(6, 369);
+            this.label6.Location = new System.Drawing.Point(6, 349);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 21);
             this.label6.TabIndex = 17;
@@ -264,7 +290,7 @@
             this.label5.BackColor = System.Drawing.Color.LightGreen;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(6, 336);
+            this.label5.Location = new System.Drawing.Point(6, 316);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 21);
             this.label5.TabIndex = 16;
@@ -276,7 +302,7 @@
             this.label4.BackColor = System.Drawing.Color.LightGreen;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(6, 303);
+            this.label4.Location = new System.Drawing.Point(6, 283);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 21);
             this.label4.TabIndex = 15;
@@ -288,7 +314,7 @@
             this.label3.BackColor = System.Drawing.Color.LightGreen;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(6, 238);
+            this.label3.Location = new System.Drawing.Point(6, 218);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 21);
             this.label3.TabIndex = 14;
@@ -300,7 +326,7 @@
             this.label2.BackColor = System.Drawing.Color.LightGreen;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(6, 205);
+            this.label2.Location = new System.Drawing.Point(6, 185);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 21);
             this.label2.TabIndex = 13;
@@ -393,27 +419,27 @@
             this.clearMemberInfoToolStripMenuItem.Text = "Clear Member Info";
             this.clearMemberInfoToolStripMenuItem.Click += new System.EventHandler(this.clearMemberInfoToolStripMenuItem_Click);
             // 
-            // textBox7
+            // textBox8
             // 
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(69, 269);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(300, 25);
-            this.textBox7.TabIndex = 25;
-            this.textBox7.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.textBox7_MouseDoubleClick);
+            this.textBox8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(91, 413);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(278, 25);
+            this.textBox8.TabIndex = 28;
+            this.textBox8.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.textBox8_MouseDoubleClick);
             // 
-            // label8
+            // label9
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.LightGreen;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(6, 273);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 21);
-            this.label8.TabIndex = 26;
-            this.label8.Text = "Email:";
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.LightGreen;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(6, 413);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 21);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Birthday:";
             // 
             // Member_List
             // 
@@ -481,5 +507,7 @@
         private Windows.Forms.ToolStripMenuItem countOldMembersToolStripMenuItem;
         private Windows.Forms.Label label8;
         private Windows.Forms.TextBox textBox7;
+        private Windows.Forms.TextBox textBox8;
+        private Windows.Forms.Label label9;
     }
 }

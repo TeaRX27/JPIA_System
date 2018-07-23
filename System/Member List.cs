@@ -117,6 +117,7 @@ namespace System
                         textBox5.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Gender"),true);
                         textBox6.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Age"),true);
                         textBox7.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("Email"), true);
+                        textBox8.Text = EnCryptDecrypt.CryptorEngine.Decrypt(reader.GetString("BDay"), true);
                     }
                 }
                 catch (MySqlException ex)
@@ -287,6 +288,15 @@ namespace System
             Form form1 = new GeneralEdit();
             form1.ShowDialog();
             textBox7.Text = GeneralEdit.data;
+        }
+
+        private void textBox8_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            GeneralEdit.data = textBox5.Text;
+            GeneralEdit.col = "BDay";
+            Form form1 = new GeneralEdit();
+            form1.ShowDialog();
+            textBox5.Text = GeneralEdit.data;
         }
 
         private void textBox6_MouseDoubleClick(object sender, MouseEventArgs e)
