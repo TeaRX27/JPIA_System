@@ -292,11 +292,11 @@ namespace System
 
         private void textBox8_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            GeneralEdit.data = textBox5.Text;
+            GeneralEdit.data = textBox8.Text;
             GeneralEdit.col = "BDay";
             Form form1 = new GeneralEdit();
             form1.ShowDialog();
-            textBox5.Text = GeneralEdit.data;
+            textBox8.Text = GeneralEdit.data;
         }
 
         private void textBox6_MouseDoubleClick(object sender, MouseEventArgs e)
