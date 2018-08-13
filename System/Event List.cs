@@ -13,10 +13,14 @@ namespace System
 {
     public partial class Event_List : Form
     {
+        private ListViewColumnSorter lvwColumnSorter;
         public Event_List()
         {
             InitializeComponent();
-
+            // Create an instance of a ListView column sorter and assign it 
+            // to the ListView control.
+            lvwColumnSorter = new ListViewColumnSorter();
+            this.listView2.ListViewItemSorter = lvwColumnSorter;
             if (MainMenu.isMaster == true)
             {
                 MainMenu.Initialize("server=localhost;uid=root;pwd=;database=jpia;sslmode=none;");
@@ -255,5 +259,30 @@ namespace System
             label5.Text = "0";
         }
 
+        private void listView2_ColumnClick(object sender, ColumnClickEventArgs e)
+        {
+            // Determine if clicked column is already the column that is being sorted.
+            if (e.Column == lvwColumnSorter.SortColumn)
+            {
+                // Reverse the current sort direction for this column.
+                if (lvwColumnSorter.Order == SortOrder.Ascending)
+                {
+                    lvwColumnSorter.Order = SortOrder.Descending;
+                }
+                else
+                {
+                    lvwColumnSorter.Order = SortOrder.Ascending;
+                }
+            }
+            else
+            {
+                // Set the column number that is to be sorted; default to ascending.
+                lvwColumnSorter.SortColumn = e.Column;
+                lvwColumnSorter.Order = SortOrder.Ascending;
+            }
+
+            // Perform the sort with these new sort options.
+            this.listView2.Sort();
+        }
     }
 }
